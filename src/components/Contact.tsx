@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Mail, Linkedin, Send, User, MessageSquare } from 'lucide-react';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,12 +24,35 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // EmailJS configuration from environment variables
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+      
+      // Check if EmailJS is configured
+      if (!serviceId || !templateId || !publicKey) {
+        console.warn('EmailJS not configured. Please add environment variables.');
+        // Fallback to simulation for demo
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        return;
+      }
+      
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'prajapatipradeep14602@gmail.com',
+      };
+
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch {
+    } catch (error) {
+      console.error('Email send failed:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
