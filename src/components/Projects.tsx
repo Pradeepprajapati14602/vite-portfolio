@@ -25,7 +25,7 @@ const Projects = () => {
       ],
       impact: "Helps users make informed smartphone purchasing decisions with 95% user satisfaction rate",
       duration: "6 months",
-      team: "Solo project"
+      team: "3 developers"
     },
     {
       title: "Kidiaree.in - Kids' Activity Discovery Platform",
@@ -51,7 +51,7 @@ const Projects = () => {
       ],
       impact: "Streamlined educational service payments with multi-gateway redundancy and automated UX improvements",
       duration: "12 months",
-      team: "Solo"
+      team: "Solo developer"
     },{
       title: "UnTaboo - Safety & Sex Education Platform",
       description: "India's first online gamified safety & sex education platform for pre-teens and teenagers",
@@ -249,6 +249,30 @@ const Projects = () => {
       impact: "Reduced data preprocessing time by 70% and improved model accuracy by 15%",
       duration: "4 months",
       team: "4 developers"
+    },
+    {
+      title: "Exam Proctor Tool - Online Examination Platform",
+      description: "Comprehensive proctoring platform with secure exam administration, real-time monitoring, and automated grading",
+      longDescription: "Built a comprehensive online examination and proctoring platform designed for secure, large-scale exam administration. The platform features subject management, dynamic question creation, time-tracking capabilities, and real-time monitoring tools. Implemented advanced security measures including protected routes, role-based access control, and exam monitoring systems to ensure academic integrity for both students and administrators.",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.io", "JWT Authentication", "Role-based Access Control", "Real-time APIs"],
+      features: [
+        "Comprehensive subject and course management",
+        "Dynamic question creation and question bank",
+        "Time-tracking and exam duration management",
+        "Protected routes and secure authentication",
+        "Role-based access control (Students, Administrators, Proctors)",
+        "Real-time exam monitoring and proctoring tools",
+        "Automated test report generation",
+        "Real-time results and grading system",
+        "Large-scale exam oversight and administration",
+        "Student progress tracking and analytics",
+        "Anti-cheating measures and browser lockdown",
+        "Exam scheduling and notification system",
+        "Bulk exam management and export functionality"
+      ],
+      impact: "Streamlined exam administration for large-scale testing with enhanced security and automated grading",
+      duration: "4 months",
+      team: "Solo"
     }
   ];
 
