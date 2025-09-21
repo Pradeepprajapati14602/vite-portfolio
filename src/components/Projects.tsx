@@ -314,29 +314,29 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-12 sm:py-16 lg:py-20 bg-gray-50 dark:bg-gray-800">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
-          className="max-w-6xl mx-auto"
+          className="max-w-7xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
-          <motion.div className="text-center mb-16" variants={cardVariants}>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <motion.div className="text-center mb-12 sm:mb-16" variants={cardVariants}>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Featured Projects
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg max-w-2xl mx-auto px-4">
               Innovative solutions that solve real-world problems and drive business value
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={index}
-                className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 cursor-pointer"
+                className="bg-white dark:bg-gray-900 rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 cursor-pointer"
                 variants={cardVariants}
                 whileHover={{ 
                   y: -8,
@@ -344,9 +344,9 @@ const Projects = () => {
                 }}
                 onClick={() => setSelectedProject(selectedProject === index ? null : index)}
               >
-                <div className="p-6">
-                  <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white line-clamp-2">
+                <div className="p-4 sm:p-6">
+                  <div className="flex items-start justify-between mb-3 sm:mb-4">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white line-clamp-2 pr-2">
                       {project.title}
                     </h3>
                     <motion.div
@@ -357,22 +357,22 @@ const Projects = () => {
                     </motion.div>
                   </div>
 
-                  <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-400 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                     {project.description}
                   </p>
 
-                  <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-500 dark:text-gray-400 mb-3 sm:mb-4">
                     <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
+                      <Calendar className="w-3 h-3 sm:w-4 sm:h-4" />
                       <span>{project.duration}</span>
                     </div>
                     <div className="flex items-center gap-1">
-                      <Users className="w-4 h-4" />
+                      <Users className="w-3 h-3 sm:w-4 sm:h-4" />
                       <span>{project.team}</span>
                     </div>
                   </div>
 
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
                     {project.technologies.slice(0, 3).map((tech, techIndex) => (
                       <span
                         key={techIndex}
@@ -388,9 +388,9 @@ const Projects = () => {
                     )}
                   </div>
 
-                  <div className="flex items-center text-green-600 dark:text-green-400 text-sm font-medium">
-                    <Zap className="w-4 h-4 mr-1" />
-                    <span className="line-clamp-1">{project.impact}</span>
+                  <div className="flex items-center text-green-600 dark:text-green-400 text-xs sm:text-sm font-medium">
+                    <Zap className="w-3 h-3 sm:w-4 sm:h-4 mr-1 flex-shrink-0" />
+                    <span className="line-clamp-2">{project.impact}</span>
                   </div>
 
                   {selectedProject === index && (
@@ -399,26 +399,26 @@ const Projects = () => {
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700"
+                      className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-gray-200 dark:border-gray-700"
                     >
-                      <p className="text-gray-700 dark:text-gray-300 mb-4">
+                      <p className="text-gray-700 dark:text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">
                         {project.longDescription}
                       </p>
                       
-                      <div className="mb-4">
-                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Key Features:</h4>
+                      <div className="mb-3 sm:mb-4">
+                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm sm:text-base">Key Features:</h4>
                         <ul className="space-y-1">
                           {project.features.map((feature, featureIndex) => (
-                            <li key={featureIndex} className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
-                              <span className="w-1 h-1 bg-blue-500 rounded-full mr-2"></span>
-                              {feature}
+                            <li key={featureIndex} className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 flex items-start">
+                              <span className="w-1 h-1 bg-blue-500 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                              <span>{feature}</span>
                             </li>
                           ))}
                         </ul>
                       </div>
 
                       <div className="mb-4">
-                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Technologies:</h4>
+                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm sm:text-base">Technologies:</h4>
                         <div className="flex flex-wrap gap-1">
                           {project.technologies.map((tech, techIndex) => (
                             <span
@@ -431,21 +431,21 @@ const Projects = () => {
                         </div>
                       </div>
 
-                      {/* <div className="flex gap-3">
+                      {/* <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                         <motion.button
-                          className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium transition-colors"
+                          className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs sm:text-sm font-medium transition-colors"
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
-                          <ExternalLink className="w-4 h-4" />
+                          <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
                           Live Demo
                         </motion.button>
                         <motion.button
-                          className="flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium transition-colors"
+                          className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-xs sm:text-sm font-medium transition-colors"
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
-                          <Github className="w-4 h-4" />
+                          <Github className="w-3 h-3 sm:w-4 sm:h-4" />
                           Source Code
                         </motion.button>
                       </div> */}
