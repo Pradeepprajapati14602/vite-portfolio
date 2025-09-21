@@ -25,7 +25,7 @@ const Skills = () => {
     {
       category: "Database",
       icon: <Database className="w-6 h-6" />,
-      items: ["MySQL", "PostgreSQL", "PostgreSQL", "Redis", "Database Design", "Query Optimization"],
+      items: ["MySQL", "PostgreSQL", "MongoDB", "Redis", "Database Design", "Query Optimization"],
       color: "from-purple-500 to-pink-500"
     },
     {

@@ -91,7 +91,7 @@ const Projects = () => {
         "A/B testing support for campaign optimization"
       ],
       impact: "Improved marketing engagement rates and campaign flexibility with scalable template management",
-      duration: "8 months",
+      duration: "7 months",
       team: "5 developers"
     },
     {
@@ -114,22 +114,36 @@ const Projects = () => {
       team: "4 developers"
     },
     {
-      title: "NRICH – Online Practice Exams Platform",
-      description: "Educational platform for online practice exams with robust data validation and processing",
-      longDescription: "Developed an online practice exams platform for NRICH Learning (practice-exams.nrichlearning.com.au) at OPS Combinator. The platform features robust data validation systems, advanced filtration mechanisms, and comprehensive validation audits to ensure high-quality educational content delivery.",
-      technologies: ["Node.js", "TypeScript", "React.js", "Redux", "PostgreSQL", "Data Validation APIs"],
+      title: "NRICH Learning Management System",
+      description: "Comprehensive educational platform with student management, assessment tools, and financial integration",
+      longDescription: "Developed a full-featured Learning Management System for NRICH Learning (practice-exams.nrichlearning.com.au) at OPS Combinator. Built with NestJS backend and React frontend, the platform includes comprehensive JWT authentication, multi-role user management, student enrollment, interactive exam systems, payment integration with Stripe, and automated reporting. Features NAPLAN test integration, teacher dashboards, parent portals, and complete financial management with Xero integration.",
+      technologies: ["NestJS", "TypeScript", "React.js", "Tailwind CSS", "PostgreSQL", "JWT", "Stripe API", "Xero API", "Redux", "PDF Generation"],
       features: [
-        "Online practice exam interface",
-        "Robust data validation systems",
-        "Advanced data filtration mechanisms",
-        "Validation audit protocols",
-        "Student progress tracking",
-        "Performance analytics dashboard",
-        "Automated grading systems",
-        "Content management for educators"
+        "JWT-based authentication with multi-role access control",
+        "Student enrollment and comprehensive exam management",
+        "Interactive exam platform with question categorization",
+        "NAPLAN test integration and specialized tracking",
+        "Teacher dashboard with class schedules and attendance",
+        "Parent portal for managing multiple student accounts",
+        "Stripe payment processing and subscription management",
+        "Invoice generation with PDF export and email notifications",
+        "Xero accounting integration for financial synchronization",
+        "Automated grade tracking and certificate generation",
+        "Comprehensive attendance tracking with analytics",
+        "Dynamic question management with rich text editing",
+        "Teacher invoice generation and payment tracking",
+        "Location-based management for multi-campus operations",
+        "CRM system with lead tracking and contact management",
+        "Email notification system with template-based messaging",
+        "Responsive dashboard with interactive data tables",
+        "Real-time analytics and comprehensive reporting",
+        "File upload system for certificates and documents",
+        "Database migration with version control and data integrity",
+        "CSV/Excel export and import functionality",
+        "Automated testing suite with unit and e2e tests"
       ],
-      impact: "Reduced data entry errors by 30% and improved processing speed by 20% with 95% data accuracy",
-      duration: "6 months",
+      impact: "Streamlined educational operations with 95% automation in student management and 40% reduction in administrative overhead",
+      duration: "1 Year",
       team: "3 developers"
     },
     {
@@ -148,7 +162,7 @@ const Projects = () => {
         "Performance optimization"
       ],
       impact: "Achieved 99% data integrity, 95% cross-browser compatibility, and reduced input errors by 25%",
-      duration: "1.5 months",
+      duration: "0.5 months",
       team: "Solo developers"
     },
     {
@@ -166,7 +180,7 @@ const Projects = () => {
         "Export and sharing capabilities"
       ],
       impact: "Improved presentation engagement by 40% and reduced creation time by 30%",
-      duration: "1 month",
+      duration: "0.5 month",
       team: "Solo developer"
     },
     {

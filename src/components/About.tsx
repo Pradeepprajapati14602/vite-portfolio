@@ -124,9 +124,25 @@ const About = () => {
                     ease: "easeInOut",
                   }}
                 >
-                  {/* Profile image placeholder */}
-                  <div className="w-full h-full bg-gray-200 dark:bg-gray-700 rounded-3xl flex items-center justify-center">
-                    <img src="src\assets\p_imp.jpg" alt="" />
+                  {/* Profile image */}
+                  <div className="w-full h-full rounded-3xl overflow-hidden flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700">
+                    <img 
+                      src="/images/p_imp.jpg" 
+                      alt="Pradeep Prajapati - Full Stack Developer" 
+                      className="w-full h-full object-cover rounded-3xl"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        const parent = target.parentElement;
+                        if (parent) {
+                          parent.innerHTML = `
+                            <div class="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                              <span class="text-4xl font-bold text-white">PP</span>
+                            </div>
+                          `;
+                        }
+                      }}
+                    />
                   </div>
                 </motion.div>
                 
