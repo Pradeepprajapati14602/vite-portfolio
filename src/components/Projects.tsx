@@ -9,7 +9,7 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Mobile Phone Recommendation Platform",
+      title: "Retello | Mobile Phone Recommendation Platform",
       description: "AI-powered ChatGPT-style assistant for smartphone recommendations with detailed insights and comparisons",
       longDescription: "Developed a comprehensive mobile phone recommendation and assistant platform that combines a searchable smartphone database with an AI-powered Q&A interface. Users can search for any smartphone and get detailed insights through conversational interactions, including specifications, performance analysis, pricing information, comparisons, and personalized recommendations based on budget and requirements.",
       technologies: ["React.js", "Python","Fast API", "OpenAI API", "PostgreSQL", "Elasticsearch", "TypeScript"],
@@ -95,7 +95,7 @@ const Projects = () => {
       team: "5 developers"
     },
     {
-      title: "Clinic Management System",
+      title: "New Horizons | Clinic Management System",
       description: "Comprehensive healthcare management platform with appointments, prescriptions, and Zoom integration",
       longDescription: "Designed and developed a full-featured clinic management system for OPS Combinator with appointment scheduling, dynamic form builder, payment processing, Zoom integration, and prescription management. Implemented role-based access control (RBAC) for secure permissions across doctors, administrators, and staff. The system significantly improved clinic operations and patient engagement.",
       technologies: ["Node.js", "TypeScript", "React.js", "Redux", "Tailwind CSS", "PostgreSQL", "Prisma", "Zoom API"],
@@ -265,7 +265,7 @@ const Projects = () => {
       team: "4 developers"
     },
     {
-      title: "Exam Proctor Tool - Online Examination Platform",
+      title: "CLINICA | Exam Proctor Tool - Online Examination Platform",
       description: "Comprehensive proctoring platform with secure exam administration, real-time monitoring, and automated grading",
       longDescription: "Built a comprehensive online examination and proctoring platform designed for secure, large-scale exam administration. The platform features subject management, dynamic question creation, time-tracking capabilities, and real-time monitoring tools. Implemented advanced security measures including protected routes, role-based access control, and exam monitoring systems to ensure academic integrity for both students and administrators.",
       technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.io", "JWT Authentication", "Role-based Access Control", "Real-time APIs"],
