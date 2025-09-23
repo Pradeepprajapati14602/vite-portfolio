@@ -92,18 +92,21 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 px-4"
             variants={itemVariants}
           >
-            <motion.button
-              className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 sm:px-8 py-3 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto justify-center text-sm sm:text-base"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => {
-                // Add resume download logic here
-                console.log('Download resume clicked');
-              }}
-            >
-              <Download className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-bounce" />
-              Download Resume
-            </motion.button>
+          <motion.button
+            className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 sm:px-8 py-3 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto justify-center text-sm sm:text-base"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              const link = document.createElement('a');
+              link.href = '/vite-portfolio/resume.pdf'; // Path inside public folder
+              link.download = 'Pradeep_Prajapati_Resume.pdf'; // Suggested download name
+              link.click();
+            }}
+          >
+            <Download className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-bounce" />
+            Download Resume
+          </motion.button>
+
 
             <motion.button
               className="group border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 px-6 sm:px-8 py-3 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 w-full sm:w-auto justify-center text-sm sm:text-base"
