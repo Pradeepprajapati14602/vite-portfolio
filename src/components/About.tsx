@@ -127,7 +127,7 @@ const About = () => {
                   {/* Profile image */}
                   <div className="w-full h-full rounded-3xl overflow-hidden flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700">
                     <img 
-                      src="/images/p_imp.jpg" 
+                      src="public/images/p_imp.jpg" 
                       alt="Pradeep Prajapati - Full Stack Developer" 
                       className="w-full h-full object-cover rounded-3xl"
                       onError={(e) => {
