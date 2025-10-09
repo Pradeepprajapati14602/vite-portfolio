@@ -287,6 +287,75 @@ const Projects = () => {
       impact: "Streamlined exam administration for large-scale testing with enhanced security and automated grading",
       duration: "4 months",
       team: "Solo"
+    },
+    {
+      title: "DayBreakPass - Hotel Amenities Platform",
+      description: "Innovative platform allowing users to access hotel amenities through daily passes without booking rooms",
+      longDescription: "Daybreakpass is an innovative platform allowing users to access hotel amenities through daily passes. Built with TypeScript, React, Tailwind CSS, Express.js, and MongoDB, the project provides a seamless experience for users to book and utilize various hotel services without booking a room. The platform reimagines luxury experiences by offering world-class spas, gourmet dining, and serene pools through exclusive day passes.",
+      technologies: ["TypeScript", "React", "Tailwind CSS", "Express.js", "MongoDB", "Node.js"],
+      features: [
+        "Dynamic hotel amenity booking system",
+        "Daily pass management and validation",
+        "User-friendly booking interface",
+        "Multi-hotel amenity management",
+        "Real-time availability tracking",
+        "Payment processing for day passes",
+        "User profile and booking history",
+        "Hotel partner dashboard",
+        "Amenity filtering and search",
+        "Mobile-responsive design",
+        "Booking confirmation and notifications",
+        "Rating and review system for amenities"
+      ],
+      impact: "Discover Your Perfect Daycation - Experience luxury reimagined with no overnight stay required",
+      duration: "3 months",
+      team: "Freelance project"
+    },
+    {
+      title: "SpikeReach - Marketing Analytics Platform",
+      description: "Comprehensive marketing analytics platform for tracking campaign performance and customer engagement",
+      longDescription: "SpikeReach is a comprehensive marketing analytics platform designed to help businesses track campaign performance and analyze customer engagement. Built with modern web technologies, the platform provides detailed insights into marketing metrics, customer behavior, and campaign effectiveness. Features advanced analytics dashboards, real-time reporting, and integration with popular marketing tools.",
+      technologies: ["TypeScript", "React", "Express.js", "MongoDB", "Analytics APIs", "Chart.js", "Tailwind CSS"],
+      features: [
+        "Advanced marketing analytics dashboard",
+        "Real-time campaign performance tracking",
+        "Customer engagement metrics",
+        "Multi-channel campaign management",
+        "ROI calculation and reporting",
+        "A/B testing analytics",
+        "Custom report generation",
+        "Marketing funnel analysis",
+        "Lead tracking and conversion metrics",
+        "Integration with popular marketing tools",
+        "Automated reporting and notifications",
+        "Data visualization and insights"
+      ],
+      impact: "Enhanced marketing decision-making with comprehensive analytics and real-time insights",
+      duration: "4 months",
+      team: "Freelance project"
+    },
+    {
+      title: "MSKEndocare - Doctor's Clinic Website",
+      description: "Professional healthcare website with appointment scheduling and doctor profiles for enhanced patient experience",
+      longDescription: "Developed Endocare, a comprehensive doctor's clinic website using HTML, CSS, and JavaScript. The website provides patients with easy access to clinic information, appointment scheduling, and detailed doctor profiles. Focused on building a clean, professional, and responsive interface that ensures seamless user experience across all devices. The platform streamlines patient-clinic interactions and improves healthcare accessibility.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Bootstrap"],
+      features: [
+        "Online appointment scheduling system",
+        "Comprehensive doctor profiles and specializations",
+        "Clinic information and services overview",
+        "Contact forms and patient inquiries",
+        "Responsive design for all devices",
+        "Clean and professional healthcare interface",
+        "Patient testimonials and reviews",
+        "Clinic location and contact details",
+        "Service descriptions and medical procedures",
+        "Healthcare blog and patient resources",
+        "Mobile-optimized booking interface",
+        "Accessibility features for all users"
+      ],
+      impact: "Improved patient experience with easy access to clinic services and streamlined appointment booking",
+      duration: "2 months",
+      team: "Freelance project"
     }
   ];
 
