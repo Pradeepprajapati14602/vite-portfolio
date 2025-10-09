@@ -84,7 +84,7 @@ const Hero = () => {
             className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-400 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-2"
             variants={itemVariants}
           >
-            Results-oriented engineer with 2.5 years of experience in Java, React.js, Node.js, 
+            Results-oriented engineer with 2.7 years of experience in Java, React.js, Node.js, 
             and scalable systems. Passionate about building innovative solutions that make a difference.
           </motion.p>
 

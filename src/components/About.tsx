@@ -68,7 +68,7 @@ const About = () => {
                       Professional Journey
                     </h3>
                     <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                      With 2.5 years of hands-on experience as a Full Stack Software Engineer at OPS Combinator Pvt. Ltd., 
+                      With 2.7 years of hands-on experience as a Full Stack Software Engineer at OPS Combinator Pvt. Ltd., 
                       I specialize in building scalable web applications using modern technologies like Java, React.js, 
                       and Node.js.
                     </p>
