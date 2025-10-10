@@ -98,7 +98,7 @@ const Hero = () => {
             whileTap={{ scale: 0.95 }}
             onClick={() => {
               const link = document.createElement('a');
-              link.href = '/vite-portfolio/resume.pdf'; // Path inside public folder
+              link.href = '/resume.pdf'; // Path inside public folder
               link.download = 'Pradeep_Prajapati_Resume.pdf'; // Suggested download name
               link.click();
             }}
