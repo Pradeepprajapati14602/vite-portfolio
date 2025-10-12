@@ -1,9 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+const fs = require('fs');
+const today = new Date().toISOString().split('T')[0]; // yyyy-mm-dd
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pradeepkumar-portfolio.vercel.app/</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-</urlset>
+</urlset>`;
+
+fs.writeFileSync('public/sitemap.xml', sitemap);
