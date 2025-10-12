@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pradeepkumar-portfolio.vercel.app/sitemap.xml
+Sitemap: https://pradeepkumar-portfolio.vercel.app/api/sitemap.xml
