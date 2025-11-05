@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GraduationCap, Award, BookOpen, Calendar } from 'lucide-react';
+import { GraduationCap, Award, BookOpen, Calendar, ExternalLink } from 'lucide-react';
 
 const Education = () => {
   const education = {
@@ -12,11 +12,28 @@ const Education = () => {
 
   const certifications = [
     {
-      title: "AWS Cloud Foundations",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      description: "Comprehensive understanding of AWS cloud services, architecture, and best practices",
-      icon: "☁️"
+      title: "AWS Academy Introduction to Cloud Semester 1",
+      issuer: "Amazon Web Services (AWS)",
+      date: "Dec 2022",
+      description: "Foundation knowledge of cloud computing concepts, AWS core services, and basic cloud architecture principles",
+      icon: "☁️",
+      credentialUrl: "https://www.credly.com/badges/f9519d6b-7434-48e6-a900-4e32c773756a/linked_in_profile" // Replace with your actual credential URL
+    },
+    {
+      title: "AWS Academy Introduction to Cloud Semester 2",
+      issuer: "Amazon Web Services (AWS)",
+      date: "Dec 2022",
+      description: "Advanced cloud services, security best practices, and hands-on experience with AWS infrastructure deployment",
+      icon: "☁️",
+      credentialUrl: "https://www.credly.com/badges/eae58b18-1523-4455-b86b-16f706ddf00d/linked_in_profile" // Replace with your actual credential URL
+    },
+    {
+      title: "AWS Academy Machine Learning Foundations",
+      issuer: "Amazon Web Services (AWS)",
+      date: "Dec 2022",
+      description: "Machine learning concepts, AWS ML services, and practical implementation of ML solutions on AWS platform",
+      icon: "🤖",
+      credentialUrl: "https://www.credly.com/badges/c920f1d2-756b-47dd-8922-87e63aeac885/linked_in_profile" // Replace with your actual credential URL
     },
     {
       title: "MySQL Database Optimization",
@@ -24,20 +41,6 @@ const Education = () => {
       date: "2023",
       description: "Advanced database optimization techniques, query performance tuning, and indexing strategies",
       icon: "🗄️"
-    },
-    {
-      title: "Machine Learning: Supervised Learning",
-      issuer: "Coursera",
-      date: "2022",
-      description: "Linear regression, classification algorithms, model evaluation, and feature engineering",
-      icon: "🤖"
-    },
-    {
-      title: "Machine Learning: Unsupervised Learning",
-      issuer: "Coursera",
-      date: "2022",
-      description: "Clustering algorithms, dimensionality reduction, and anomaly detection techniques",
-      icon: "📊"
     }
   ];
 
@@ -196,6 +199,20 @@ const Education = () => {
                         <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                           {cert.description}
                         </p>
+                        
+                        {cert.credentialUrl && (
+                          <motion.a
+                            href={cert.credentialUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center mt-3 text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-medium text-sm transition-colors duration-200"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                          >
+                            Show credential
+                            <ExternalLink className="w-3 h-3 ml-1" />
+                          </motion.a>
+                        )}
                       </div>
                     </div>
                   </motion.div>
