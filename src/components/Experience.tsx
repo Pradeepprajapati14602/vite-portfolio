@@ -5,7 +5,7 @@ const Experience = () => {
   const experience = {
     company: "OPS Combinator Pvt. Ltd.",
     position: "Full Stack Software Engineer",
-    duration: "April 2023 – Present",
+    duration: "Dec 2022 – Present",
     location: "Mumbai, India",
     achievements: [
       "Designed and implemented CI/CD automation pipelines, reducing deployment time by 60% and improving system reliability",
